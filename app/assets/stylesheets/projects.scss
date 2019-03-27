@@ -1,0 +1,74 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.articles {
+  height: auto;
+  padding-top: 1rem;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.row {
+  vertical-align: middle;
+  line-height: 1.1em;
+}
+
+.articles-header{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project {
+  border: 2px solid black;
+  border-bottom: 0;
+  height: auto;
+  padding: 1rem;
+  overflow-wrap: break-word;
+}
+
+.project-image{
+  border-right: 0;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.last-project{
+  border-bottom: 2px solid black;
+}
+
+.project-img {
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .project-img {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .project-img {
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-img {
+    width: 7rem;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .project-text {
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project-text {
+    padding-top: 8rem;
+  }
+}

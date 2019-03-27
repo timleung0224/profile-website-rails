@@ -1,0 +1,29 @@
+<% @blogs.each do |blog| %>
+  <% if blog == @blogs.last %>
+    <div class = "row">
+      <div class = "comment-box last-comment-box">
+        <%= blog.comments %>
+        <div class = "comment-links">
+          <%= blog.created_at.strftime("%B %d %Y, %l:%M%P") %>
+          <div class = "line-break"><p><br/></p></div>    
+          comment by <%= blog.author %>      
+          <%= link_to "Edit", edit_blog_path(blog) %>
+          <%= link_to "Delete", blog_path(blog), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+      </div>
+    </div>
+  <% else %>
+    <div class = "row">
+      <div class = "comment-box">
+        <%= blog.comments %>
+        <div class = "comment-links">
+          <%= blog.created_at.strftime("%B %d %Y, %l:%M%P") %>
+          <div class = "line-break"><p><br/></p></div>    
+          comment by <%= blog.author %>      
+          <%= link_to "Edit", edit_blog_path(blog) %>
+          <%= link_to "Delete", blog_path(blog), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<% end %>

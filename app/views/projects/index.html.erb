@@ -1,0 +1,23 @@
+<div class = "container"> 
+  <div class = "articles col">
+    <div class= "row"> 
+      <div class = "articles-header col"><h2>My Projects</h2></div>
+    </div>
+    <div class = "row">
+      <div class = "project project-image col-4"><%= image_tag("tic-tac-toe.png", :class => "project-img") %></div>
+      <div class = "project  project-text col-8">
+        A tic-tac-toe website made by jquery, css, bootstrap, html. 
+        <div class = "line-break"><p><br/></p></div> 
+        Feel free to check out at <%= link_to "https://github.com/timleung0224/tic-tac-toe-jquery.", "https://github.com/timleung0224/tic-tac-toe-jquery", :target => "_blank" %>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "last-project project project-image col-4"><%= image_tag("tic-tac-toe-angular.png", :class => "project-img") %></div>
+      <div class = "last-project project project-text col-8">
+        A tic-tac-toe website with database. Made by angular, css, bootstrap, html, firebase. 
+        <div class = "line-break"><p><br/></p></div> 
+        Feel free to check out at <%= link_to "https://github.com/timleung0224/tic-tac-toe-angular.", "https://github.com/timleung0224/tic-tac-toe-angular", :target => "_blank" %>     
+      </div>
+    </div>
+  </div>
+</div>

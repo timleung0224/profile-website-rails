@@ -1,0 +1,29 @@
+<div class = "homepage">
+  <div class = "container-fluid"> 
+    <div class= "row"> 
+      <div class = "introduction col">
+        <h1>Hi I Am Timothy!</h1>
+        <h2>Looking for a junior web developer job</h2>
+      </div>
+    </div>
+    <div class= "row">
+      <div class = "introduction col">
+        <p>
+          Skills I Know : js, html, css, bootstrap, jquery, angular, firebase and ruby on rails. 
+          <div class = "line-break"><p><br/></p></div> 
+          Feel free to look into my projects and leave a comment.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class = "container-fluid">
+    <div class= "row">
+      <div class= "homepage-btn-group col text-center">
+        <%= link_to "Projects", projects_index_path(), class: "homepage-btn btn btn-primary" %>
+        <%= link_to "Sharing", sharing_index_path(), class: "homepage-btn btn btn-primary" %>
+        <%= link_to "Comments", blog_index_path(), class: "homepage-btn btn btn-primary" %>
+        <%= link_to "Contact", contact_index_path(), class: "homepage-btn btn btn-primary" %>
+        </div>
+      </div>
+  </div>
+</div>

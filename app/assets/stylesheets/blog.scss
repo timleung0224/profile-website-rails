@@ -1,0 +1,29 @@
+.comments-tex-field {
+  width: 80%;
+  height: 100px; 
+}
+
+.comment-box {
+  font-size: 20px;
+  border: 2px solid black;
+  border-bottom: 0px;
+  width: 100%;
+  padding: 1rem; 
+  word-wrap: break-word;
+}
+
+.comments {
+  margin-top: 0rem;
+  padding-top: 0px;
+  height: auto;
+}
+
+.last-comment-box {
+  border-bottom: 2px solid black;
+}
+
+.comment-links {
+  font-size: 14px;
+  text-align: right;
+}
+

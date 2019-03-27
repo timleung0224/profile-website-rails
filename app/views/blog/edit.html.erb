@@ -1,0 +1,22 @@
+<div class = container>
+  <h1>Edit comment</h1>
+</div>
+<div class = "container">
+	<%= form_with(model: @blog, local: true)do |form| %>
+  
+  <p>
+    <%= form.label :Author %><br>
+    <%= form.text_field :author %>
+  </p>
+  
+  <p>
+    <%= form.label :Comments %><br>
+    <%= form.text_area :comments, class: "comments-tex-field"  %>
+  </p>
+  
+  <p>
+    <%= form.submit "Submit" , class: "btn btn-default btn-primary" %>
+  </p>
+	<% end %>
+  <%= link_to "back", blog_index_path %>
+</div>
